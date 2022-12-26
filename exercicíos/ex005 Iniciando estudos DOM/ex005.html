@@ -5,14 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(110, 110, 255);
+        }
+    </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
-    <P>Aqui vai o resultado</P>
+    <h1 name="msg2">Iniciando estudos com DOM</h1>
+    <P id="teste">Aqui vai o resultado</P>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim!</div>
+    <div id="msg">Clique em mim!</div>
     <script>
+        window.document.write(window.document.charset)// Mostra na tela o tipo de @Charset
+        window.document.write(window.document.URL)// Mostra a URL do arquivo
+        window.document.write(window.navigator.appCodeName)// Mostra o nome do navegador
+    </script>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] // Variavel recebe a tag de paragrafo do HTML começa com 0
+        window.document.write('Esta escrito assim: ' + p1.innerText) // Mostra na tela o conteudo da tag p sem suas configurações de estilos
+        p1.style.color = 'blue'// Muda a cor de estilo da tag p
+
+        var p2 = window.document.getElementsByTagName('p')[1]
+        // window.alert(p2.innerHTML) // Mostra na tela o conteudo da tag p com as suas configuraçoes de estilo
         
+        var d = window.document.getElementById('msg')
+        d.style.background ='green'
+        d.innerText =  'Estou aguardando...'
+        
+        var e = window.document.getElementsByName('msg2')[0]
+        e.style.color = 'yellow'
+
+        var f = window.document.querySelector('p#teste')
+        d.style.background = 'red'
+
+
     </script>
 </body>
 </html>
