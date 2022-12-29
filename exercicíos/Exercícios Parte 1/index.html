@@ -7,17 +7,24 @@
     <title>Exercício JS</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onload="carregar()">
     <header>
-        <h1>Titulo do Exercício</h1>
+        <h1>Hora do dia</h1>
     </header>
+
     <section>
-        <div>Testando...</div>
-        <div>Testando...</div>
+        <div id="msg"> Aqui aparece a mensagem com as horas</div>
+        
+        <div id="foto">
+            <img id="imagem" src="imagens/fotodia.png" alt="Foto do dia">
+        </div>
+        <div id="msg2"> Aqui aparece a mensagem de bom dia, boa tarde ou boa noite. </div>
     </section>
+
     <footer>
         <p>&copy;CursoemVídeo</p>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
