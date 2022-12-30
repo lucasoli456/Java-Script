@@ -3,9 +3,6 @@ function verificar(){
     var ano = data.getFullYear()// Serve para puxar o ano atual
     var fano = document.getElementById('txtano') // Busca o que fo digitado no input pelo id
     var res = document.querySelector('div#res') // Busca o dado mas deve colocar a tag mais o id
-    var fsex = document.getElementsByName('radsex')
-    var idade = ano - Number(fano.value)
-    var genero = ''
     
     if (fano.value.length == 0 || Number(fano.value) > ano){
         window.alert('[ERRO!] *ANO INVÁLIDO* Verifique os dados e tente novamente!')
