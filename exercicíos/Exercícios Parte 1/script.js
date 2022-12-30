@@ -6,7 +6,13 @@ var data = new Date()
 var hora = data.getHours()
 msgt.innerHTML = `Agora são ${hora} horas.`
 
-if (hora >= 0 && hora < 12) {
+
+if (hora >= 0 && hora <= 5 ){
+    img.src = 'imagens/fotomadrugada.png'
+    msgb.innerHTML = `Tenha uma boa madrugada`
+    document.body.style.background = '#081b1f'
+}
+else if (hora >= 6 && hora < 12) {
     img.src =  'imagens/fotodia.png'  
     msgb.innerHTML = `Tenha um bom dia!`
     document.body.style.background = '#e2cd9f'
