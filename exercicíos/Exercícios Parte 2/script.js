@@ -16,7 +16,7 @@ function verificar(){
 
 
 
-        // Testa se o checked foi marcado Masculino e mostra a imagem de acordo com o ano de nascimento
+        // Testa se o checked foi marcado Masculino e mostra a imagem de acordo com a idade
         if (fsex [0].checked){
             genero = 'Homem'
 
@@ -35,7 +35,7 @@ function verificar(){
             }
 
         
-        // Testa se o checked foi marcado Feminino e mostra a imagem de acordo com o ano de nascimento    
+        // Testa se o checked foi marcado Feminino e mostra a imagem de acordo com a idade   
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             
