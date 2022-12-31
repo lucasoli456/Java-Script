@@ -4,7 +4,7 @@ function verificar(){
     var fano = document.getElementById('txtano') // Busca o que fo digitado no input pelo id
     var res = document.querySelector('div#res') // Busca o dado mas deve colocar a tag mais o id
     
-    if (fano.value.length == 0 || Number(fano.value) > ano){
+    if (fano.value.length == 0 || Number(fano.value) > ano){ // Testa se a caixa ano foi inserido um valor inválido ou vazio
         window.alert('[ERRO!] *ANO INVÁLIDO* Verifique os dados e tente novamente!')
     } else {
 
@@ -16,7 +16,7 @@ function verificar(){
 
 
 
-
+        // Testa se o checked foi marcado Masculino e mostra a imagem de acordo com o ano de nascimento
         if (fsex [0].checked){
             genero = 'Homem'
 
@@ -34,8 +34,8 @@ function verificar(){
                 img.setAttribute('src', 'dead.png')
             }
 
-
-
+        
+        // Testa se o checked foi marcado Feminino e mostra a imagem de acordo com o ano de nascimento    
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             
