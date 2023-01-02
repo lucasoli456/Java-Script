@@ -1,5 +1,5 @@
 function verificar(){
-    var data = new Date() // Serve para puxar o ano atual
+    var data = new Date() // Serve para puxar a data atual
     var ano = data.getFullYear()// Serve para puxar o ano atual
     var fano = document.getElementById('txtano') // Busca o que fo digitado no input pelo id
     var res = document.querySelector('div#res') // Busca o dado mas deve colocar a tag mais o id
