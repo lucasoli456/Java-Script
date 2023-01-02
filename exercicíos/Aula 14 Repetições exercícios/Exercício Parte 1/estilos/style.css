@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(70, 142, 236);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+header{
+    font-size: 1.4em;
+    text-align: center;
+    
+}
+section{
+    background-color: rgba(255, 255, 255, 0.77);
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.511);
+}
+div{
+    
+    font-size: 1.6em;
+    text-align: left;
+    padding: 8px;
+}
+footer{
+    font-size: 1.1em;
+    text-align: center;
+    font-style: italic;
+}
