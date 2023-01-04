@@ -11,6 +11,7 @@ function contar(){
         let nini = Number(ini.value)
         let nfim = Number(fim.value)
         let nintervalo = Number(intervalo.value)
+        
         if (nintervalo <= 0){
             window.alert('Intervalo inválido! Considerando INTERVALO 1 ')
             nintervalo = 1
